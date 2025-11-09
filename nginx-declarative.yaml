@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-declarative
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -30,4 +30,5 @@ spec:
   ports:
   - protocol: TCP
     port: 80
+
     targetPort: 80
